@@ -9,140 +9,77 @@
     <title>Bootstrap Sample</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
   </head>
   <body>
     <header style="background-color:gray">Header</header>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2" style="background-color:red;">Red</div>
-    <div class="col-sm-8" style="background-color:blue;">Blue</div>
-    <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
-  </div>
-</div>
-    <div class="container">
-    <div class="table-responsive">
-    <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>名前</th>
-        <th>メールアドレス</th>
-        <th>電話番号</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-          <td>煌木 太郎</td>
-          <td>taro.kirameki@example.com</td>
-          <td>09011112222</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-          <td>煌木 次郎</td>
-          <td>jiro.kirameki@example.com</td>
-          <td>09033334444</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-          <td>煌木 花子</td>
-          <td>hanako.kirameki@example.com</td>
-          <td>09055556666</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
-<p>
-  <button type="button" class="btn btn-primary btn-lg">Large button</button>
-  <button type="button" class="btn btn-default btn-lg">Large button</button>
-</p>
-<p>
-  <button type="button" class="btn btn-primary">Default button</button>
-  <button type="button" class="btn btn-default">Default button</button>
-</p>
-<p>
-  <button type="button" class="btn btn-primary btn-sm">Small button</button>
-  <button type="button" class="btn btn-default btn-sm">Small button</button>
-</p>
-<p>
-  <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-  <button type="button" class="btn btn-default btn-xs">Extra small button</button>
-</p>
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-<form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <button type="submit" class="btn btn-default">Send invitation</button>
-</form>
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    <!--ダイアログを呼び出すボタン-->
+    <!--<button id="btn_action2">ダイアログ表示</button>-->
+    <button id="btn_action2">メニュー表示</button>
+
+    <!--ダイアログの内容-->
+    <!--<div id="mydialog2" title="ボタン付きダイアログ">
+      オリジナルダイアログをポップアップ表示するサンプル。<br />
+      <!--ラジオボタンを配置-->
+      <!--<label><input type="radio" name="test" value="1" checked> 選択肢1</label><br />
+      <label><input type="radio" name="test" value="2"> 選択肢2</label><br />-->
+      <!--チェックボックスを配置-->
+      <!--<label><input type="checkbox" value="1">上記記載事項に同意します</label>
+    </div>-->
+    <div id="mydialog2" title="処理を選択してください">
+      <!--オリジナルダイアログをポップアップ表示するサンプル。<br />
+      <!--ラジオボタンを配置-->
+      <!--<label><input type="radio" name="test" value="1" checked> 選択肢1</label><br />
+      <label><input type="radio" name="test" value="2"> 選択肢2</label><br />-->
+      <!--チェックボックスを配置-->
+      <!--<label><input type="checkbox" value="1">上記記載事項に同意します</label>-->
     </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-     <div class="col-sm-offset-2 col-sm-10">
-       <div class="checkbox">
-         <label>
-           <input type="checkbox"> Remember me
-         </label>
-       </div>
-     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </div>
-</form>
-<footer style="background-color:gray">Footer</footer>
+
+<script>
+
+$(function(){
+  // ダイアログの初期設定
+  $("#mydialog2").dialog({
+    autoOpen: false,  // 自動的に開かないように設定
+    width: 500,       // 横幅のサイズを設定
+    modal: true,      // モーダルダイアログにする
+    buttons: [        // ボタン名 : 処理 を設定
+      {
+        text: 'クレーム（メール）',
+        click: function(){
+          alert("ボタン1をクリックしました");
+        }
+      },
+      {
+        text: '先取依頼へ',
+        click: function(){
+          alert("ボタン2をクリックしました");
+        }
+      },
+      {
+        text: 'close',
+        click: function(){
+          // ダイアログを閉じる
+          $(this).dialog("close");
+        }
+      }
+    ]
+  });
+
+  $("#btn_action2").click(function(){
+    // ダイアログの呼び出し処理
+    $("#mydialog2").dialog("open");
+  });
+})
+
+</script>
+
     <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>      
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
